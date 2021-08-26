@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //velocidade
+        var velocidadeveiculo = prompt("qual a velocidade do veiculo?")
+        var velocidadepista = prompt("qual a velocidade da pista?")
+
+        // multa
+        if (velocidadeveiculo <= velocidadepista) {
+            document.write("bom motorista")
+        } else if (velocidadeveiculo <= velocidadepista + 10) {
+            document.write("multa de R$50,00")
+        } else if (velocidadeveiculo <= velocidadepista + 20) {
+            document.write("multa de R$100,00")
+        } else {
+            document.write("multa de 200,00")
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
