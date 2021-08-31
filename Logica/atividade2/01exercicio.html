@@ -10,14 +10,21 @@
     <script>
 
         //obter um número
-        var número = parseInt(prompt("informe um número"))
+        var numero = prompt("informe um número")
 
-                //condicional
-                document.write(número - 10)
-        document.write("<br>")
-                document.write(número + 10)
+        //indice
+        var indice = 0
 
-            
+        //laço
+        while (indice <= 10) {
+            document.write(numero + "x " + indice + " =" + (numero * indice) + "<br>")
+            indice++
+        }
+
+
+
+
+
 
     </script>
 </head>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //lista de cidades
+        var cidades = ["Blumenau", "Indaial", "Brusque", "Timbó", "Florianópolis", "Joinville", "Jaraguá do Sul", "Pomerode"]
+
+        //exibir quantidade de cidades
+        document.write("há " + cidades.length + " cidades cadastradas.<hr>")
+
+        //pedir termo da pesquisa 
+        var termo = prompt("informe o termo da pesquisa")
+
+        //existe cidade
+        var existe = false
+
+        //laço
+        var indice = 0
+        while (indice < cidades.length) {
+
+            if (cidades[indice].indexOf(termo) != -1) {
+                document.write(cidades[indice] + "<br>")
+            }
+            indice++
+        }
+
+        //condicional
+        if (existe == false) {
+            document.write("o termo pesquisado não pertence a nenhuma cidade.")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
