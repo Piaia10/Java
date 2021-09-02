@@ -9,21 +9,18 @@
 
     <script>
 
-        //obter um número
-        var número = parseInt(prompt("informe um número"))
-
-                //condicional
-                        document.write(número - 1)
-        document.write("<br>")
-                        document.write(número + 1)
-
-            
+        function teclado(valor) {
+            document.getElementById("texto").innerHTML = valor
+        }
 
     </script>
+
 </head>
 
 <body>
+    <input type="text" placeholder="digite algo" onkeyup="teclado(this.value)">
 
+    <p id="texto"></p>
 </body>
 
 </html>
