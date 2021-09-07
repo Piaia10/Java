@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        //menu
+        var menu = "***menu***\n"
+        menu += "1) Blumenau\n"
+        menu += "2) Pomerode\n"
+        menu += "3) Gaspar\n"
+        menu += "4) Timbó\n"
+        menu += "5) Indaial\n"
+        menu += "6) finalizar votação"
+
+        //voto
+        var voto
+
+        //contadores
+        var Blumenau = 0, Pomerode = 0, Gaspar = 0, Timbó = 0, Indaial = 0
+
+
+        //laço
+        do {
+            voto = prompt(menu)
+
+            switch (voto) {
+
+                case "1":
+                    Blumenau++
+                    break
+
+                case "2":
+                    Pomerode++
+                    break
+
+                case "3":
+                    Gaspar++
+                    break
+
+                case "4":
+                    Timbó++
+                    break
+
+                case "5":
+                    Indaial++
+                    break
+
+                case "6":
+                    alert("votação finalizada com sucesso!")
+                    break
+
+                default:
+                    alert("opção inválida")
+            }
+
+        } while (voto != 5)
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
