@@ -1,4 +1,4 @@
-package AtividadesArrayList.atividade01.atividade02;
+package AtividadesArrayList.atividade02;
 
 public class Pessoa {
     
